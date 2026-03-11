@@ -1,0 +1,47 @@
+Aim
+
+To write a Python program to perform various list operations such as append, insert, remove, pop, sorting, and finding sum, maximum, and minimum values in a list.
+
+Algorithm
+Start the program.
+Create a list my_list with elements [3, 1, 4, 1, 5].
+Print the original list.
+Use the append() function to add the element 9 at the end of the list.
+Print the updated list.
+Use the insert() function to insert the element 7 at index position 2.
+Print the updated list.
+Use the remove() function to remove the first occurrence of element 1 from the list.
+Print the updated list.
+Use the pop() function to remove the last element from the list and display it
+Use the sorted() function to display the list in sorted order.
+Use sum() to calculate the sum of all elements in the list.
+Use max() to find the largest element in the list.
+Use min() to find the smallest element in the list.
+Stop the program.
+
+EXECUTE
+my_list = [3, 1, 4, 1, 5]
+
+print("Original:", my_list)
+my_list.append(9)
+print("After append:", my_list)
+my_list.insert(2, 7)
+print("After insert:", my_list)
+my_list.remove(1)
+print("After remove:", my_list)
+print("Pop:", my_list.pop())
+print("Sorted:", sorted(my_list))
+print("Sum:", sum(my_list))
+print("Max:", max(my_list))
+print("Min:", min(my_list))
+
+OUTPUT
+Original: [3, 1, 4, 1, 5]
+After append: [3, 1, 4, 1, 5, 9]
+After insert: [3, 1, 7, 4, 1, 5, 9]
+After remove: [3, 7, 4, 1, 5, 9]
+Pop: 9
+Sorted: [1, 3, 4, 5, 7]
+Sum: 20
+Max: 7
+Min: 1
