@@ -1,0 +1,47 @@
+Aim
+
+To write a Python program to demonstrate dictionary operations such as accessing elements, retrieving keys, values, items, adding a new element, and removing an element.
+
+Algorithm
+
+Start the program.
+Create a dictionary named student with the key-value pairs:
+name : "Alice"
+age : 20
+grade : "A"
+Print the complete dictionary.
+Access and print the value of the key "name" using dictionary indexing.
+Use the keys() method to display all keys of the dictionary.
+Use the values() method to display all values of the dictionary.
+Use the items() method to display all key-value pairs.
+Add a new key "city" with value "New York" to the dictionary.
+Print the updated dictionary.
+Use the pop() method to remove the key "age" from the dictionary.
+Print the dictionary after removal.
+Stop the program.
+
+EXECUTE
+student = {
+    "name": "Alice",
+    "age": 20,
+    "grade": "A"
+}
+
+print("Dictionary:", student)
+print("Name:", student["name"])
+print("Keys:", student.keys())
+print("Values:", student.values())
+print("Items:", student.items())
+student["city"] = "New York"
+print("After adding:", student)
+student.pop("age")
+print("After remove:", student)
+
+OUTPUT
+Dictionary: {'name': 'Alice', 'age': 20, 'grade': 'A'}
+Name: Alice
+Keys: dict_keys(['name', 'age', 'grade'])
+Values: dict_values(['Alice', 20, 'A'])
+Items: dict_items([('name', 'Alice'), ('age', 20), ('grade', 'A')])
+After adding: {'name': 'Alice', 'age': 20, 'grade': 'A', 'city': 'New York'}
+After remove: {'name': 'Alice', 'grade': 'A', 'city': 'New York'}
