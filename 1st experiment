@@ -1,0 +1,64 @@
+Aim
+
+To write a Python program to demonstrate different data types and various operators such as arithmetic, comparison, and logical operators.
+
+Algorithm
+
+Start the program.
+Declare variables with different data types:
+a = 10 (integer)
+b = 3.14 (float)
+c = "Hello" (string)
+d = True (boolean)
+e = [1,2,3] (list)
+f = (1,2,3) (tuple)
+g = {"name":"John"} (dictionary)
+Print “Data Types:”.
+Use the type() function to display the type and value of each variable.
+Declare two variables x = 10 and y = 3.
+Perform arithmetic operations such as addition, subtraction, multiplication, division, floor division, exponentiation, and modulus.
+Print the results of arithmetic operations.
+Perform comparison operations such as greater than, less than, equal to, and not equal to
+Print the results of comparison operations.
+Perform logical operations using and and or.
+Print the results of logical operations.
+Stop the program.
+EXECUTION
+# Data Types
+a = 10          # int
+b = 3.14        # float
+c = "Hello"     # str
+d = True        # bool
+e = [1, 2, 3]   # list
+f = (1, 2, 3)   # tuple
+g = {"name": "John"}  # dict
+
+print("Data Types:")
+print(type(a), a)
+print(type(b), b)
+print(type(c), c)
+print(type(d), d)
+print(type(e), e)
+print(type(f), f)
+print(type(g), g)
+
+# Operators
+x, y = 10, 3
+
+print("\nArithmetic:", x+y, x-y, x*y, x/y, x//y, x**y, x%y)
+print("Comparison:", x>y, x<y, x==y, x!=y)
+print("Logical:", (x>5 and y<5), (x>5 or y>5))
+
+OUTPUT
+Data Types:
+<class 'int'> 10
+<class 'float'> 3.14
+<class 'str'> Hello
+<class 'bool'> True
+<class 'list'> [1, 2, 3]
+<class 'tuple'> (1, 2, 3)
+<class 'dict'> {'name': 'John'}
+
+Arithmetic: 13 7 30 3.3333333333333335 3 1000 1
+Comparison: True False False True
+Logical: True True
