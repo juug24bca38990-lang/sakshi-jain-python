@@ -1,0 +1,42 @@
+Aim
+
+To write a Python program to demonstrate string operations such as uppercase, lowercase, length, replace, split, join, slicing, and finding a character.
+
+Algorithm
+
+Start the program.
+Declare a string variable text = "Hello Python".
+Print the original string.
+Use the upper() method to convert the string into uppercase and print it.
+Use the lower() method to convert the string into lowercase and print it.
+Use the len() function to find the length of the string.
+Use the replace() method to replace the word "Python" with "World" and print the result.
+Use the split() method to divide the string into words and print the list.
+Use the join() method to join the words "Hello" and "Python" with “-” between them.
+Use string slicing text[0:5] to print the first five characters.
+Use the find() method to locate the position of the character "P" in the string.
+Stop the program.
+
+EXECUTION
+text = "Hello Python"
+
+print("Original:", text)
+print("Uppercase:", text.upper())
+print("Lowercase:", text.lower())
+print("Length:", len(text))
+print("Replace:", text.replace("Python", "World"))
+print("Split:", text.split())
+print("Join:", "-".join(["Hello", "Python"]))
+print("Slice:", text[0:5])
+print("Find 'P':", text.find("P"))
+
+OUTPUT
+Original: Hello Python
+Uppercase: HELLO PYTHON
+Lowercase: hello python
+Length: 12
+Replace: Hello World
+Split: ['Hello', 'Python']
+Join: Hello-Python
+Slice: Hello
+Find 'P': 6
