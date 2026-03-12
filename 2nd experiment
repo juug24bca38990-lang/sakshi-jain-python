@@ -1,0 +1,57 @@
+Aim
+
+To write a Python program to demonstrate control flow statements (if–else) and looping statements (for loop and while loop).
+
+Algorithm
+
+Start the program.
+Declare a variable age = 18.
+Use an if–else statement to check the condition:
+If age >= 18, print "You are adult".
+Otherwise, print "You are minor".
+Print "For loop:".
+Create a list fruits = ["apple", "banana", "orange"].
+Use a for loop to iterate through each element in the list.
+Print each fruit name.
+Print "While loop:".
+Initialize a variable i = 1.
+Use a while loop with the condition i <= 5.
+Print "Count: i" in each iteration.
+Increase the value of i by 1 using i += 1.
+Repeat until the condition becomes false.
+Stop the program.
+EXECUTION
+# Control Flow (if-else)
+age = 18
+if age >= 18:
+    print("You are adult")
+else:
+    print("You are minor")
+
+# Looping (for loop)
+print("\nFor loop:")
+fruits = ["apple", "banana", "orange"]
+for fruit in fruits:
+    print(fruit)
+
+# Looping (while loop)
+print("\nWhile loop:")
+i = 1
+while i <= 5:
+    print(f"Count: {i}")
+    i += 1
+OUTPUT
+
+You are adult
+
+For loop:
+apple
+banana
+orange
+
+While loop:
+Count: 1
+Count: 2
+Count: 3
+Count: 4
+Count: 5
