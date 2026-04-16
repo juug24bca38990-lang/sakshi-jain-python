@@ -1,0 +1,41 @@
+Numpy and Panda 
+algorithm 
+Start
+Import required libraries:
+pandas for data handling
+matplotlib.pyplot for plotting
+Create a DataFrame with:
+Names of individuals
+Their monthly spending values
+Convert the Monthly_spend column from string to integer type
+Sort the DataFrame in ascending order based on monthly spend
+Create a figure for plotting
+Plot a bar graph using:
+Names on X-axis
+Monthly spend on Y-axis
+Label the X-axis as “Name”
+Label the Y-axis as “Monthly Spend”
+Add title “Monthly Spend (Sorted)”
+Display the graph using show()
+Stop
+Execute 
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Create DataFrame
+spl = pd.DataFrame({
+    "Name": ["Sakshi", "Chetan", "Tina", "Akshat"],
+    "Monthly_spend": ["60000", "40000", "65000", "50000"]
+})
+
+# Convert 'Monthly_spend' to numeric and sort
+spl["Monthly_spend"] = spl["Monthly_spend"].astype(int)
+spl_sorted = spl.sort_values(by="Monthly_spend", ascending=True)
+
+# Plot bar graph
+plt.figure()
+plt.bar(spl_sorted["Name"], spl_sorted["Monthly_spend"])
+plt.xlabel("Name")
+plt.ylabel("Monthly Spend")
+plt.title("Monthly Spend (Sorted)")
+plt.show()
