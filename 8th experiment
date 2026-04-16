@@ -1,0 +1,35 @@
+Regular expression Statement
+algorithm
+Start
+Import the re module
+Define input string(s) for processing
+Perform required operations using regular expressions:
+Use re.search() to find a pattern in the string
+Use re.split() to split the string into parts
+Use re.sub() to replace a word/pattern
+Use re.match() to check pattern at the beginning
+Use re.finditer() to find all occurrences with positions
+Store the results of each operation
+Display the outputs accordingly
+Stop
+Execute
+import re
+
+text = "My email is john@email.com and phone is 123-456-7890"
+
+
+email = re.findall(r'\S+@\S+', text)
+print("Email:", email)
+
+
+phone = re.findall(r'\d{3}-\d{3}-\d{4}', text)
+print("Phone:", phone)
+
+
+pattern = r'^My'
+if re.match(pattern, text):
+    print("Starts with 'My'")
+
+
+new_text = re.sub(r'\d+', 'XXX', text)
+print("Masked:", new_text)
