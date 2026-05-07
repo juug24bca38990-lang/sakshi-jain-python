@@ -14,22 +14,18 @@ Display the outputs accordingly
 Stop
 Execute
 import re
-
 text = "My email is john@email.com and phone is 123-456-7890"
-
-
 email = re.findall(r'\S+@\S+', text)
 print("Email:", email)
-
-
 phone = re.findall(r'\d{3}-\d{3}-\d{4}', text)
 print("Phone:", phone)
-
-
 pattern = r'^My'
 if re.match(pattern, text):
     print("Starts with 'My'")
-
-
 new_text = re.sub(r'\d+', 'XXX', text)
 print("Masked:", new_text)
+OUTPUT
+Email: ['john@email.com']
+Phone: ['123-456-7890']
+Starts with 'My'
+Masked: My email is john@email.com and phone is XXX-XXX-XXX
