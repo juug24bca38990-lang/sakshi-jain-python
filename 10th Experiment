@@ -1,0 +1,102 @@
+QUESTION 
+a) WAP to load, clean & explore the data using Python
+ALGORITHM
+1.Start the program.
+2.Import the pandas library.
+3.Read the CSV file using read_csv().
+4.Display the first few rows using head().
+5.Display dataset information using info().
+6.Display statistical summary using describe().
+7.Check for missing values using isnull().sum().
+8.Remove null values using dropna().
+9.Remove duplicate values using drop_duplicates().
+10.Stop the program.
+
+EXECUTE
+import pandas as pd
+df = pd.read_csv("data.csv")
+print(df.head())
+print(df.info())
+print(df.describe())
+print(df.isnull().sum())
+df.dropna(inplace=True)
+df.drop_duplicates(inplace=True)
+
+OUTPUT
+   ID   Name   Marks
+0   1   Ram      85
+1   2   Sam      78
+2   3   Ravi     90
+3   4   John     88
+4   5   Anu      76
+RangeIndex: 5 entries, 0 to 4
+Data columns (total 3 columns):
+ID        5 non-null int64
+Name      5 non-null object
+Marks     5 non-null int64
+              ID      Marks
+count   5.000000   5.000000
+mean    3.000000  83.400000
+std     1.581139   6.188699
+min     1.000000  76.000000
+max     5.000000  90.000000
+
+ID       0
+Name     0
+Marks    0
+dtype: int64
+
+b) WAP to implement various types of visualization using Python
+Algorithm
+1.Start the program.
+2.Import matplotlib and seaborn libraries.
+3.Create data values for graphs.
+4.Draw a line plot using plot().
+5.Draw a bar chart using bar().
+6.Draw a histogram using hist().
+7.Draw a pie chart using pie().
+8.Draw a scatter plot using scatter().
+9.Display each graph using show().
+10.Stop the program.
+
+EXECUTE
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+x = [1,2,3,4,5]
+y = [10,20,15,25,30]
+
+categories = ['A','B','C','D']
+values = [5,7,3,8]
+
+data = [10,20,30,30,40,40,50]
+
+plt.figure()
+plt.plot(x,y)
+plt.title("Line Plot")
+plt.xlabel("x-axis")
+plt.ylabel("y-axis")
+
+plt.show()
+
+plt.figure()
+plt.bar(categories,values)
+plt.title("Bar Chart")
+plt.show()
+
+plt.figure()
+plt.hist(data)
+plt.title("Histogram")
+plt.show()
+
+plt.figure()
+plt.pie(values, labels=categories, autopct='%1.1f%%')
+plt.title("Pie Chart")
+plt.show()
+
+plt.figure()
+plt.scatter(x,y)
+plt.show()
+
+OUTPUT 
+Has been generated as pictures 
